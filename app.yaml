@@ -1,0 +1,13 @@
+runtime: nodejs18
+
+env: flex
+
+handlers:
+  - url: /.*
+    script: auto
+    
+network:
+  session_affinity: true
+
+env_variables:
+  PORT: 8000
